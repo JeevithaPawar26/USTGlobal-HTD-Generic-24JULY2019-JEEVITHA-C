@@ -1,0 +1,1910 @@
+Q. History of java :
+
+	a) Oak ( 1995-96).
+	b) Developed by James gosling in sun microsystem.
+	c) java is object oriented programing language.
+***********************************************************************************************************************************************************************
+Q. Editions :
+
+	a) java Standard Edition(SE).   --> Develop standalone application.
+	b) java Micro Edition   (ME).   --> Small size device ex: calculator.
+	c) java Enterprise Edition(EE). --> Organization,bussiness purpose.
+
+***********************************************************************************************************************************************************************
+Q. Application :
+	a) Stand alone application.
+	b) Web Application.
+
+***********************************************************************************************************************************************************************
+Q. Why java so popular ?.
+
+	1) java is very easy to learn.
+	2) java has 1000(lot of methods) methods which is difficult to remember.(either it can be taken as advantage or disadvantage).
+	3) java is platform independent(once it is complied it can work in any of the operatig system).i.e wtite once use 'N' number of times.
+
+***********************************************************************************************************************************************************************
+Q. Developemnt of any of the application we should follow the following steps ?.
+
+	1) First we write the source code present in source file.
+	2) To make that source file as java source file then we have to save with an extension .java i.e( source.java).
+	3) Before .java file executes file must be complied i.e javac checks the syntax(rules). java complier chcks the syntactical error.
+	4) Command for compiling .java file we use (javac src.java).
+	5) I/P to the java compiler was .java and O/P will be .class
+	6) To execute that .class file we have command ( java classname).
+	7) Whole java works on the concept of virtual(imagination,not real) machine. ie. JVM(java virtual machine).
+	8) JRE is an Application ,it enables to create JVM ,in that machine we are able run .class file
+	9) .class file can be run in any of the Operating system that have JRE.
+	10) Inside JVM  we have JIT(Just in time compiler, which convert byte codes to binary codes).
+	11) .class file contain byte code( It is a kind a of language neither understand by humans nor system). JVM can understand the byte code.
+	12) JVM acts as an interpreter.
+	13) Byte code is reason for platform independancy.
+	14) JIT, it converts byte code into machine understantable language ie binary language.
+
+**********************************************************************************************************************************************************************
+Q. Working flow of java Program.
+
+
+		-------	  .java		-------	 .class(ready for execution)		
+		-------   ----------> 	-------    -----------------------------> JVM --> JRE
+		-------	 		-------	                                  JIT
+		src.java		javac
+
+					a)checks syntax
+
+					 if(syntax correct)
+					{
+					 s.o.p("generate .class file");
+					}
+					else{
+					s.o.p("throws an compile time error");
+					}
+
+**********************************************************************************************************************************************************************
+Q. java program :
+
+	Two parts:
+		a) Declaration.
+		b) Defination.
+
+*********************************************************************************************************************************************************************
+Q. Writing a program we use either
+
+	a) class.
+		public class classname
+					{ 
+					  // statements (body, block, definition) }
+						                                   
+	b) interface.
+
+**********************************************************************************************************************************************************************
+Q. Basic program :
+
+	a) If we want to make changes in the .java file again we have to compile it, then only it reflect the changes we made in the .java file
+		
+	public class HelloJava{
+		public static void main(String[] args) {
+		System.out.println("Hello Java");
+		System.out.println("Hello World");
+		}
+	}
+
+**********************************************************************************************************************************************************************
+Q. Why java is called as Object oriented programming language ?
+
+ 	a) Objects are elements of a program that has some DATA, which is also known as STATES.
+	b) Objects also has BEHAVIORS which means they can perform certain operation. Those behavior in java is called as METHODS.
+
+**********************************************************************************************************************************************************************
+Q. Keywords :
+
+	1) Keywords are the words which has pre-defined meaning inside a programming language.
+	2) Java is case sensitive language.
+	3) 50 keywords in java. But we have 3 literals(True,False and null) they are also called as keywords. Therefore we have 53 keywords. 
+
+**********************************************************************************************************************************************************************
+Q. Identifiers :
+
+	a) Identifiers are the name given to the variables, class and methods.(Name given to components/Elements of a program)
+	b) RULES to follow when we are creating an identifier:
+
+		1) It should starts with alphabets or a letter.
+		2) It can't start from a digit.
+		3) After the first character it can starts from a digit. Hence it is Alphanumeric.
+		4) Identifiers are also case sensitive.
+		5) Keywords can not be used as identifiers.
+		6) _ and $ are the only two special characters can be allowed.
+		7) spaces are not allowed between identifiers when we have two or more identifiers.
+
+*********************************************************************************************************************************************************************
+Q. NOTE :
+
+	a) If a class is public then you should save that file with same name as class name.
+	b) If we want to execute/Run the java program JRE is enough.
+	c) If we want to develope an application JDK is needed.
+	d) Java is a strongly typed language.
+	e) cmd: (javap classname)--> we can see what are all the methods present in program(.java). 
+	f) Java coding convention (check in google).
+
+*********************************************************************************************************************************************************************
+Q. VARIABLES :
+
+	a) It is piece of memory that has certain name, So we can store certain DATA in a variable.
+	b) Named memory location to store the DATA.
+	c) Every variable should have data type.
+	d) variables can be re-initialized.
+	e) From java 9 var as become a keyword.
+
+	1) Declaration.
+	2) Initialization
+	3) Utilization.
+
+
+	Example: int a; 	//Declaration.
+		 a=10; 		//Initialization
+		s.o.p(a);	//Utilization.
+
+	Example: byte b=12;	//Declaration and Initialization in same line
+		 s.o.p(b);			
+
+*********************************************************************************************************************************************************************
+Q. DATA TYPES :
+
+	a) Data type is nothing but it is a type of data which specifies what type of data is a variable is holding.
+	b) Data types are classified into two types namely:
+
+		i)  Primittive Data type.
+		ii) Refference Data type.
+
+	i)  Primittive Data type: A data type which is defined by the language is called as Primittive Data type.
+
+		a) Java has 8 primittive data types(out of 8 data types 6 were used for numbers).
+
+			1) byte data type: 
+				a) It can contain numeric value.
+				b) size  :  8 bits(1 byte).
+				c) Range : -128 to 127.
+			
+			2) short data type:
+				a) It can contain numeric value.
+				b) size  : 2 bytes.
+				c) Range : -32768 to 32767
+
+			3) integer data type:
+				a) It can contain numeric value.
+				b) size   : 4 bytes.
+				c) Range  : 2 million aprox.
+				d) Example: int a=10;
+
+			
+			4) long data type:
+				a) It can contain numeric value.
+				b) size  : 8 bytes.
+				c) Range : 9 billion aprox.
+
+			5) double data type:
+				a) It can contain numeric value with decimal point value.
+				b) decimal point of double can hold  more than 6 digits (max:16).
+				c) Example : double d=1.123456789
+				d) size    : 8 bytes.
+				
+			6) float data type:
+				a) It can contain numeric value with decimal point value.
+				b) decimal point of float can hold  6 or 7 digits.
+				c) example : float f=1.234567f
+				d) size    : 4 bytes.
+			
+			7) character data type(literals).
+				a) It can take only single character.
+				b) It should be wriiten in single quotes.
+				c) Example: char c='A';
+
+			8) Boolean data type(literals).
+				a) It can take the value as true or false.
+				d) Its size is not defined.
+
+	EXAMPLE:
+
+		public class Sample123{
+	 		public static void main(String[] args) {
+			byte b=127;
+			short s =32767;
+			float f=1.123456789f;
+			double d=1.1234567891234567891;
+			char c1='A';
+			boolean bn=true;
+			char c3='a';
+			//char c2='AB'; (throws an error it must of single character)
+		 	// char c4=a;  (error: should be in single code).
+			System.out.println(b);
+			System.out.println(s);
+			System.out.println(f);
+			System.out.println(d);
+			System.out.println(c1);
+			//System.out.println(c2);
+			System.out.println(c3);
+			System.out.println(bn); 		
+		        }  }	
+
+***********************************************************************************************************************************************************************		
+Q. WHY DO WE NEED VARIABLES ?
+
+	a) To perform some operation.
+	b) That Operation is performed by some Operators.
+
+***********************************************************************************************************************************************************************
+Q. OPERATORS :
+
+	a) An Operator is a special symbol or keyword that is used to designate the mathematical operation or some other type of Operation.
+	b) These Operations can be performed on one or more than one values called as OPERANDS.
+
+***********************************************************************************************************************************************************************
+Q. TYPES OF OPERATORS :
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	1) ARITHMETIC OPERATOR :  +, -, *, /, % 
+			       :  + and - are Additive arithmetic operator.
+			       :  *, / , % are called multiplicative Operator.
+			Example:  4%2 ---> 4/2 ---> 4/1 * 1/2 ( finally we land into Multiplication Operator).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	2) ASSIGNMENT OPERATOR : =, +=, -=, *=, /= , % =
+			       : It is also called as Compound Operator.
+
+			Example:
+					public class AssignmentOperator{
+					public static void main(String[] args) {
+					int i=400;
+					int j=200;
+					System.out.println("i="+i);
+					System.out.println("j="+j);
+					System.out.println("***************************************");
+					i+=j;
+					System.out.println("i="+i);
+					i-=j;
+					System.out.println("i="+i);
+					i*=j;
+					System.out.println("i="+i);
+					i/=j;
+					System.out.println("i="+i);
+					i%=j;
+					System.out.println("i="+i); }  }
+
+			OUTPUT: 	E:\UST global\JAVA\Operators>java AssignmentOperator
+					i=400
+					j=200
+					***************************************
+					i=600
+					i=400
+					i=80000
+					i=400
+					i=0 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	3) INCREMENT AND DECREMENT OPERATOR : 
+				
+		a) INCREMENT Operator(++) increment the value by one unit.
+		b) DECREMENT Operator(--) decrement the value by one unit.
+		c) These are also called as UNARY OPERATOR.
+
+		d) When we use the operator before the operand then it is called as :
+
+			i) pre-increment operator(working flow of the operator).
+				1) Increment.
+				2) Substitute.
+				3) Utilize.
+			ii) pre-decrement operator.
+
+		e) When we use the operator after the operand then it is called as  :
+
+			i) post-increment operator(working flow of the operator).
+				1) Substitute.
+				2) Utilize.
+				3) Increment.
+			ii) post-decrement operator.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	4) RELATIONAL OPERATORS OR COMPARISIONAL OPERATOR : 
+	
+		a) They are used to compare the two operands.
+		b)  Types of Relational operator:
+		     i)   == : It returns true when both side of the equation else false.
+		    ii)   != : It returns true When both side of the eqn is not true.
+		   iii)   <  : Returns true if the left side of eqn is less than rightside eqn . 
+		    iv)   >  : Returns true if the left side of eqn is greater than rightside eqn.
+	             v)   <= : Returns true if the left side of eqn is less than and equal to rightside eqn . 
+		    vi)   >= : Returns true if the left side of eqn is greater and equal to than rightside eqn.
+		c) The return type of Relational operator is BOOLEAN.
+
+	EXAMPLE :
+
+		public class RelationalOperator{
+		public static void main(String[] args) {
+		int i=10;
+		int j=20;
+		boolean b =i==j;
+		System.out.println("for == "+b);
+		b=i!=j;
+		System.out.println("for != "+b);
+
+		b= i> j;
+		System.out.println("for > "+b);
+
+		b=i>=j;
+		System.out.println("for >= "+b);
+
+		b=i<j;
+		System.out.println("for < "+b);
+
+		b=i<=j;
+		System.out.println("for <= "+b); } }
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	5) LOGICAL OPERATOR : 
+
+		a) Whenever we need to check two or more operand at same time we go for LOGICAL OPERATOR.
+		b) Return type of this operator is BOOLEAN.
+		c) Not operator is a unary operator
+		d) TYPES :
+			 i) NOT (!)  : It returns false if the RHS is true.
+			ii) AND (&&) : a) It is called as conditional AND or Logical AND operator.
+				       b) Both condition must be satisfied.
+				       c) If the first candition is false it will not check the condition.
+					
+		       iii) OR (||)  : a) Any one of the condition must be true.
+
+
+ NOT OPERATOR :
+
+		TRUTH TABLE:
+	_______________________
+	A		Y
+	_______________________
+	T		F
+		
+	F		T
+	______________________
+				       
+			
+ 	 1)  AND:
+   		-----------------------
+		A	B	Y
+  		-----------------------
+		T	T	T
+      		----------------------
+		T	F	F  
+		---------------------
+		F	T	F	
+		--------------------	
+		F	F	F		
+  	 -----------------------------------------------
+
+ 	 Where : A is condition1 and B condition2.
+
+		case1: If first ondition is false , and operator returns false without chking 2nd condition.
+		case2: If the 1st condition is true,then the result depend on the 2nd condition
+		case3: If both the condition is true , then the result is true.
+		case4: If both the condition is false, then the result is flase. 
+
+	 OR OPERATOR: If the 1st condition is true the result of all operator is true without cheking the 2nd condition.
+
+		Truth Table:
+		__________________________________
+		A	B		Y
+		__________________________________
+		
+		T	T		T
+
+		T	F		T
+
+		F	T		T
+
+		F	F		F
+		________________________________	
+
+	CASES:
+		case 1: If the 1st condition is true the result of all operator is true without cheking the 2nd condition.
+		cases 2: If the 2nd condion is true then the result is true.
+		case 3: If both condition is false then the result is false.
+
+	EXAMPLE :
+		public class LogicalOperator{
+		public static void main(String[] args) {
+		boolean b1= true;
+		boolean b2=false;
+
+		boolean b = b1 && b2;
+		System.out.println("for &&  is : "+b);
+
+		b = b1 || b2;
+		System.out.println("for || is : "+b);
+
+		b = !(b1||b2);
+		System.out.println("for ! is : " +b);} }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	6) BITWISE OPERATOR : 
+		
+		a) Operation is performed by bitwise was bit by bit.
+		b) Types : &, | , ^(i/p are same then the result is 0 else 1),complements.
+
+	EXAMPLE : 
+
+		public class BitwiseOperator{
+		public static void main(String[] args) {
+		int b1=2;
+		int b2=3;
+
+		int b= b1 & b2;
+		System.out.println("for & :"+b);
+
+		b= b1 | b2;
+		System.out.println("for | :"+b); } }
+
+***********************************************************************************************************************************************************************
+Q. CONTROL FLOW STATEMES : 
+
+ 	a) It is used to control the flow of execution.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+	1) IF SATEMENT:
+		
+		a) It is control flow statement.
+		b) If the condition is true ,then if block will execute.
+		c) If it condition is false , then it will terminate from the if bolck.
+
+		SYNTAX: if(condition){
+					//statements.
+						}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	2) IF-ELSE STATEMENTS :
+
+		a) It is control flow statement.
+		b) If the condition is true ,then if block will execute.
+		c) If it condition is false , then else block will execute.
+		d) It is also called as else if ladder.
+
+		SYNTAX :if(condition){
+					//statements.
+						}
+			else{
+					//statements.
+						}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	3) IF-ELSEIF : 
+
+		a) It is also called as else if ladder.	
+		b) Whenever we have more than one boolean condition , then will go foe if-elseif, ie when we have multipole condition.
+		c) 
+
+		SYNTAX : 
+			if(condition){
+				//statements }
+			else if(condition){
+				//statements }
+			else if(condition){
+				//statements }
+				.......
+				.......
+				...N....
+
+			else{
+				//statements }
+
+	EXAMPLE :
+		public class IfElseIfExample{
+		public static void main(String[] args) {
+		double marks=41;
+		if(marks >=91 && marks <=100)
+		{
+			System.out.println("A grade");
+		}
+
+		else if( marks >=81 && marks<=90)
+		{
+			System.out.println("B grade");
+		}
+		else if( marks>=71 && marks <=80)
+		{
+			System.out.println("C grade");
+		}
+		else if( marks>=61 && marks <=70)
+		{
+			System.out.println("D grade");
+		}
+		else if(marks >=51 && marks <=60)
+		{
+			System.out.println("E grade");
+		}
+		else if(marks >=41 && marks <=50)
+		{
+			System.out.println("Re-Test");
+		}
+		else if(marks>=0 && marks <=40)
+		{
+			System.out.println("Fail");
+		}
+		else{
+			System.out.println("Invalid Entry of the marks"); } } }		
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	4) SWITCH STATEMENT  : 
+
+		a) It only check for EQUALITY.
+		b) break statement : when a pgm is executed at that time break statement is encountered then it will come out of that block.
+		c) Not at all mandatory to write the break statement ,but it is a good practice to have a break statement.
+		
+		SYNTAX :
+
+			switch(condition)
+			{
+			 case1: //statements
+			 break;
+			}
+			{
+			 case2: //statements
+			 break;
+			}
+			{
+			 case3: //statements
+			 break;
+			}
+			 default: //statements
+
+**********************************************************************************************************************************************************************
+		
+Q. LOOPING STATEMENTS : 
+			 Loops in java are nothing but when we want to execute a certain statements again and again.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	1) FOR LOOP : 
+			a) It checks the condition again and again until the the certain condition to be false.
+			b) Initialization can happen only once.
+			c) Increment/Decrement can happen 'N' number of times(based on condition).
+			d) for(; ;) {} --> Infinite loop because there will no condition to terminate that loop.
+			e) If we have infinite loop then we cant right any statements after the infinite loop
+
+		SYNTAX :
+				for(initialization ; test-condition ; counter or (increment/decrement))	
+				 {  
+					//Statements
+					//Statements
+					//Statements
+				 }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	2) WHILE LOOP : 
+
+			a) when certain lines of code needs to be executed again and again.
+			b) Initialization must be done outside the while loop.
+			c) Increment/Decrement must be written inside the while loop.
+			d) Condition is evaluated before the execution.
+				
+				SYNTAX : 
+					while(condition)
+					 {
+					  // statements
+					 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	3) DO WHILE LOOP :
+
+			a) Same as while loop, only difference is first it will execute first and then check the condition.
+			b) If the condition is true it will again execute , else it will cpme out of the loop.
+			c) Do while loop exeute atleast once.
+			
+				SYNTAX :
+					do
+					 {
+				 	   //statements
+					 }while(condition);
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	4) FOR EACH LOOP :
+				a) It is used in ARRAYS and COLLECTIONS.
+
+**********************************************************************************************************************************************************************
+Q. Q. WAP using CFS and looping statements where in the user can print his name once if the days of the week are weekday.
+
+		public class Example1{
+		public static void main(String[] args) {
+		int dayNum =6;
+		String name ="JEEVITHA PAWAR";
+
+		switch(dayNum)
+		{
+			case 1 : 
+			case 2 : 
+			case 3 : 
+			case 4 : 
+			case 5 : 
+			{
+				System.out.println("name ="+name);
+				break;
+			}
+			case 6 :
+			case 7:
+			{
+				for(int i=1;i<=5;i++)
+				{
+					System.out.println("name ="+name);
+				}
+			}
+
+			default : System.out.println("invalid entry"); }}}
+
+***********************************************************************************************************************************************************************
+Q. METHODS:
+
+	a) Methods are named blocked of code , which performs specific task.
+	b) To perform same operation in different class we use methods.
+
+	c) How methods are created :
+		i)  Methods Declaration.
+		ii) Methods Definition.
+ 
+	d) Method can be identified easily because method will start from small letter and followed by parenthesis.
+	e) ClassName should always start with Capital letter.
+
+	f) Access Specifier : It specify the visibility of any of the code component.
+	g) Access Modifier  : It tells that the component belong to the particular CLASS or OBJECT.
+	h) ReturnType       : It can be any of primittive data types, void or reference data type(void is empty).
+
+	i) If the return type is any thing other than void we have to add a return statements.
+	j) Method may or may not return value.
+	k) Method will only execute if it been CALLED by passing the requried argument.
+	l) Method which is been called is known as called Method.
+	m) Method which is calling another Method is known as calling Method.
+	n) Arduments can be any of primitive dataType, reference datatype or null.
+	o) We can create a method only inside a Class.
+	p) We cant create a Method inside a Method, it is against the rule of java.
+	q) We have something called as Class loder & main method will be called by the compiler.we are not going to call the main method.
+
+	r) ADVANTAGE : 
+
+		1) Reduce the number of lines of code
+		2) Code re-usability.
+
+
+	SYNTAX :	
+			AccessSpecifier AccessModifier ReturnType methodName(argument list)	//Method declaration							
+			{
+			  // Method definition
+			   statements
+			   statements
+			   return statement;
+
+			}
+
+
+	Example :	
+			public static void main(String [] args)
+			{
+			 //Method definition
+			}
+
+*********************************************************************************************************************************************************************
+Q. PACKAGE :
+
+	a) pakage
+		i)  com (domain), package name should start with domain name. 
+		ii) edu
+
+*********************************************************************************************************************************************************************
+Q. ARRAYS :
+
+	a) It is a homogeneous group of data.
+	b) Inside array we have INDEX.
+	c) INDEX are use to identify particular bucket.
+	d) Index of an array will always starts frim ZERO.
+	e) It has fixed size.
+	f) When we try to access the Array more than its specified size it will throw error: java.lang.ArrayIndexOutOfBoundsException
+	g) Any word starting with small letter is either a variable or method.
+	h) Create the array with the help of new keyword.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	DECALRATION OF AN ARRAY:
+			
+		SYNTAX: datatype[] arrayname;
+				
+				or
+			datatype arrayname[];
+
+		EXAMPLE: int[] Numbers;
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	CREATION OF AN ARRAY:
+
+		SYNTAX: arrayname = new datatype[size];
+		EXAMPLE: Numbers= new int[5]; 
+
+**********************************************************************************************************************************************************************
+Q. STRING:
+
+	a) String is a sequence of character.
+	b) String is a kind of character array but we not specify the size
+	c) Group of character which is ecnclosed by double qoutes.
+	d) If the string having > 2000 character its a good practice use another string.
+	e) Internally string uses the character array to store the data(NOTE).
+	f) String is Immutable.
+	g) String is a user defined data type(reference type).
+	h) String is a class which can store the data
+	i) We can also create the string with the help of new keyword.
+	j) String is a class which is pre-defined in java. 
+
+	EXAMPLE:
+
+		char[] c ={'H','E','L','L','O'};
+
+	EXAMPLE:
+
+		String str="HELLO";
+	
+	EXAMPLE:
+
+		String str= new String("HELLO");
+
+**********************************************************************************************************************************************************************
+Q. STRING METHODS :
+
+	a) length()		: 	return type--->integer
+	b) toCharArray()	:	return type--->character array
+	c) charAt(index)	: 	return type--->character
+
+	d) equals(characterSequence) :	return type--->boolean (character Sequence should not be null).
+	
+	e) equalsIgnoreCase(characterSequence): return type--->boolean
+
+	f) contains(CharacterSequence): return type--->boolean
+	g) replace(old,new)	:	return type--->String
+	h) indexOf(characterSequence):  return type--->Integer
+	i) toUpperCase() :		return type--->String
+	j) toLowerCase() :		return type--->String
+	k) substring(beginIndex) :	return type--->String
+	l) substring(beginIndex, endIndex) : return type--->String
+
+	EXAMPLE :
+
+		package com.dev.strings;
+
+		public class StringMethodExample {
+		public static void main(String[] args) {
+		String str = "Hey! Java String";
+		String str1 = "hey! java string";
+		int len = str.length();
+		System.out.println("Length of string =" + len);
+		char[] ch1 = str.toCharArray();
+		System.out.println("CharacterArray=" + ch1[10]);
+		char ch2 = str.charAt(12);
+		System.out.println("charAt=" + ch2);
+		boolean b1 = str.equals(str1);
+		System.out.println("equals method=" + b1);
+		boolean b2=str.equalsIgnoreCase(str1);
+		System.out.println("equalsIgnoreCase method=" + b2);
+		boolean b3=str.contains("ey J"); //to check the particular character present or not.
+		System.out.println("contains()="+b3);
+		boolean b4=str.contains("H"); //to check the particular character present or not.
+		System.out.println("contains()="+b4);
+		String s1=str.replace("Hey", "HEY");//replace old with new 
+		System.out.println("replace()="+s1);
+		int i1=str.indexOf('J');
+		System.out.println("indexOf()="+i1);
+		String s2=str.toUpperCase();
+		System.out.println("toUpperCase()="+s2);
+		String s3=str.toLowerCase();
+		System.out.println("toLowerCase()="+s3);
+		String s4=str.substring(3);// index value
+		System.out.println("substring()="+s4);
+		String s5=str.substring(3, 16);
+		System.out.println("substring()="+s5); }}
+
+**********************************************************************************************************************************************************************
+Q. REFFERCE TYPE :
+
+	a) A refernce type is a type that is based on class rather than a primittive data type.
+	b) A refernce type can be based on pre-defined classes in java or classes defined by programmer or user or developer.
+	c) new keyword is used to to create an object.
+	d) reference variable will not store the content of an object, but it store the physical ADDRESS of the object.
+
+**********************************************************************************************************************************************************************
+Q. STATIC AND NON-STATIC
+
+	1) STATIC :
+
+		a) Any member of the class that has been declared with the static keyword is called as static member.
+		b) Any member which is declared as static we can access that member using a classname in a another class(i.e classname.members).
+		c) Any member which is declared as static within the same class to access that we just use the member.
+		d) If the member is static then it is belong to the class.
+		e) Inside the non-static Method and static method we can't create a static data member, 
+		   we can create a static data member outside the method and inside the scope of the class.
+
+			EXAMPLE :
+					 public static int areaOfSquare(int side) {				
+					 static int area=side*side; //error
+					 return area; }
+
+		f) We can create the variable with the same data type with a same name( we should specify the that as static).
+		g) If we declare without static it will throw an error because the variable having same name used by the method.
+
+	2) NON-STATIC :
+
+		a) Any member of the class that has been not declared with the keyword static is called non-static member.
+		b) To access the non-static members of the class in an another class as well as in same class we have 
+		   to create an object with the help of new keyword.
+		c) Any member which is declared as non-static within the same class we have to create the object of that class.
+		d) If the member is non-static then is belong to the object of that class.
+
+********************************************************************************************************************************************************************** 
+Q. VARIABLES :
+
+	I) Variables can be divided into two types namely
+
+		i)  local variables : which is created within the scope of the method.(we cant declare local variable as static/non-static).
+		ii) global variables: which is created within the scope of class.(It can be used anywhere in the class).
+
+	i) local variables is of two types namely
+
+		a) primitive
+		b) reference
+
+	ii) global variables  is divided into two types namely	
+
+		a) primitive
+			i) static
+			ii) non-static
+		b) reference
+			i) static
+			ii) non-static	
+
+**********************************************************************************************************************************************************************
+NOTE :
+
+	public class Test {
+
+				}
+
+	a) We not write any statements within the body of a class , then the compiler it self write one method.
+	b) That method does not return any value neither void.
+	c) That method as same name as the class name.
+	d) That method is called as constructor.
+	
+	EXAMPLE :
+
+*********************************************************************************************************************************************************************
+Q. CONSTRUCTOR :
+
+	a) Constructor is a special type of the method, which as same name as that of the classname.
+	b) constructor will not return any value neither the void.
+	c) Constructor is basically used to create the object.
+	d) When we create the object of class the constructor is INVOKED.
+	e) Constructor can have a body but it does not have return statement.
+	f) constructor can also have N number of arguments as method.
+	g) If we create the constructor of our own then compiler will not create any constructor.
+	h) Every class must and should have constructor.
+	i) If we not create the constructor the compiler will create default constructor.
+	j) A constructor having arguments is called as PARAMETERIZED constructor.
+	k) default constructor and zero argument constructor are not one and the same, because default constructor is created by the compiler,
+           and it does not take any input value and have no body, in case of no-argument constructor is created by programmer and it have of body.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	EXAMPLE 1 : We not write any statements within the body of a class , then the compiler it self write one method.
+
+		public class Demo
+		  {
+	
+			}
+
+	OUTPUT :
+
+		E:\UST global\JAVA\Constructor>javac Demo.java		
+		E:\UST global\JAVA\Constructor>javap Demo
+		Compiled from "Demo.java"
+		public class Demo {
+ 		public Demo();
+		 }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Example 2 : If we create the constructor of our own then compiler will not create any constructor.
+
+		public class Demo {
+	        Demo(int a)
+		   {
+
+		   }
+		}
+
+	OUTPUT : 
+	
+		E:\UST global\JAVA\Constructor>javac Demo.java
+		E:\UST global\JAVA\Constructor>javap Demo
+		Compiled from "Demo.java"
+		public class Demo {
+		Demo(int);
+		 }
+
+***********************************************************************************************************************************************************************
+Q. CONSTRUCTOR OVERLOADING : 
+
+	a) Trying to create the number of constructor with different datatype of input arguments.
+	b) Order of the input argument must be different.
+	c) No of input arguments.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	EXAMPLE : CONSTRUCTOR OVERLOADING
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	package com.dev.constructor;
+
+	public class ConstructorExample {
+
+	public ConstructorExample() {
+		System.out.println("zero-args constructor");
+	}
+
+	public ConstructorExample(int a) {
+		System.out.println("constructor with integer args=" + a);
+	}
+
+	public ConstructorExample(String s1) {
+		System.out.println("constructor with string args=" + s1);
+	}
+
+	public ConstructorExample(String[] s2) {
+		System.out.println("constructor with String[]  args =" + s2);
+	}
+
+	public ConstructorExample(int x, double y) {
+		System.out.println("constructor with two args(int & double) =" + x + " and " + y);
+	}
+
+	public ConstructorExample(double y, int x) {
+		System.out.println("constructor with two args( double & int ) =" + x + " and " + y);
+	}
+
+	public static void main(String[] args) {
+		new ConstructorExample();
+		new ConstructorExample(100);
+		new ConstructorExample("Hello");
+		new ConstructorExample("Hey you!!!!!!!!!!!!!!!!!!!!!!!!");
+		new ConstructorExample(234, 56.34);
+		new ConstructorExample(56.34, 234); } }
+
+**********************************************************************************************************************************************************************
+Q. IMPORT STATEMENTS :
+
+	a) when we have to access the members of two different packages, we use import statements.
+
+**********************************************************************************************************************************************************************
+Q. ACCESS SPECIFIERS :
+
+	a) controls the visiblity.
+	b) four types of access specifiers namely
+		1) public
+		2) protected
+		3) package/default
+		4) private
+
+	1) public : It can be used by any other class i.e accessed in other package
+	2) protected : It can not be used within another package.
+	3) package/default : It can not be used within another package.
+	4) private : We can not access this with another class in same package. It can be used only inside the same class.
+
+**********************************************************************************************************************************************************************
+Q. ASSOCIATION : 
+
+	a) Association in java is relationship between two different classes.
+	b) Association is of different types
+
+		i)   one-one
+		ii)  one-many
+		iii) many-many
+		iv)  many-one
+
+	c) In java we have two types of association namely
+
+		i) has-a relation.
+			a) Aggregation: Existance of one class will not depend on another class.
+			b) Composition: Existance of one class is very much dependent on another class.
+
+		ii) is-a relation: Inheritance.
+
+**********************************************************************************************************************************************************************
+Q. INHERITANCE :
+
+	a) The process by which one class acquires the properties and functionalities of another class is called as INHERITANCE.
+	b) The aim of inheritance is used to provided re-usability of the code.
+	c) A class whose properties/functionalities are being inherited by another class is known as Parent/Base/Superclass.
+	d) A class that inherits the properties/functionalities from another class is known as Child/Derived/Subclass.
+	e) If we want, some operation to be performed by class then we go for Inheritance.
+	f) For inheritance in java we have to make use of extends keyword.
+	g) You can accesss the properties of both SuperClass and SubClass using object of SubClass.
+	h) final classes can not be inherited :--> final members of a SuperClass can be inherited but can't be change.
+	i) private members and constructors of SuperClass can't be Inherited.
+	j) Method overriding must and should in Inheritance.
+
+
+	k) Types of Inheritance are :
+
+		1) Single Inheritance  :  single class acquiring the properties of another class.
+		2) Multi-level Inheritance : subclass inheriting the property from superclass and that superclass inheriting property from supermost class.
+		3) Multiple Inheritance : one subclass acquring property from two superclass. It is not supported in java--> Diamond problem.
+		4) Heirarchicl Inheritance : One superclass is extended by N number of subclasses.
+		5) Hybrid Inheritance : It is the combination of all type of Inheritance(single/multi-level).
+
+**********************************************************************************************************************************************************************	
+Q. super keyword
+
+	a) super keyword referce to the object of immediate parent or super class.
+	b) To access the data member of parent class when both child and parent class have data member with the same name.
+	c) If we not specify the super(); inside the zero-argumet constructor compiler will invoke super();
+
+*********************************************************************************************************************************************************************
+Q. METHOD OVERRIDING :
+
+	a)  Declaring a method in a child class which has already being declared in parent class is known as  METHOD OVERRIDING.
+	b)  METHOD OVERRIDING is done to provide implementation specific to a child class.
+	c)  overriding method-child class and overriden method-parent class.
+	d)  It should have same input argument.
+
+**********************************************************************************************************************************************************************
+Q. ADVANTAGE OF METHOD OVERRIDING :
+
+	a) we can provide implementation to the child class method without hindring/changing the port present in the parent class.
+	b) we can not override the method present inside the class.
+	c) static and private method can't be overridden
+	d) final method can't be overriden but final method can be inherited.
+
+**********************************************************************************************************************************************************************
+Q. METHOD OVERLODING :
+
+	a) Crearting mutiple method within the same class having same name but different in
+		i)   Number of argument
+		ii)  data type of thae argument
+		iii) position of the data type	
+
+	b) Method overloading is a feature in java, that allows us to have same methods(same name) in the single class more than once.provided the argument
+	   list differ in
+		i) No. of parameter.	
+		ii) order of parameter.
+		iii) data types of parameter.
+	
+	c) System.out.println()--->Best example of  Method overloading.
+
+***********************************************************************************************************************************************************************
+Q. WAP To Print different mathematical operation having different argument list.
+
+--------->
+
+	package com.dev.methodOverloading;
+
+	public class Calculator {
+
+	public int calculate(int a, int b, int c) {
+		int add3 = a + b + c;
+		return add3;
+	}
+
+	public double calculate(double d1, double d2, double d3) {
+		double diff3 = d1 - d2 - d3;
+		return diff3;
+	}
+
+	public int calculate(int x1, int x2, int x3, int x4) {
+		int product4 = x1 * x2 * x3 * x4;
+		return product4;
+	}
+
+	public void calculate(int p, int q) {
+		int add2 = p + q;
+		System.out.println("addition of 2-args=" + add2);
+	}
+
+	public void calculate(double p, double q) {
+		double diff2 = p - q;
+		System.out.println("subtraction of 2-args=" + diff2);
+	}
+
+	public void calculate(double d1, double d2, int i1, int i2) {
+		double add4 = d1 + d2 + i1 + i2;
+		System.out.println("addition of 4-args=" + add4);
+	}
+
+	public void calculate(double p, double q, double r, double s) {
+		double diff4 = p - q - r - s;
+		System.out.println("subtraction of 4-args=" + diff4);
+	}
+
+	private void calculate(double d1, double d2, int i1) {
+		double prod3 = d1 * d2 * i1;
+		System.out.println("product of 3-args=" + prod3);
+
+	}
+
+	/*
+	 * final method can be overloaded,private method can be overlaoded.
+	 */
+
+	final public void calculate(int i1, double d1) {
+		double prod2 = i1 * d1;
+		System.out.println("product of 2-args=" + prod2);
+
+	}
+
+	public static void main(String[] args) {
+		Calculator c1 = new Calculator();
+
+		int add1 = c1.calculate(10, 20, 30);
+		System.out.println("addition of 3-args=" + add1);
+
+		double sub1 = c1.calculate(20.2, 5.1, 1.0);
+		System.out.println("subtraction of 3-args=" + sub1);
+
+		int prod1 = c1.calculate(1, 2, 3, 2);
+		System.out.println("product of 4-args=" + prod1);
+
+		c1.calculate(1, 2);
+		c1.calculate(10.1, 2);
+		c1.calculate(10.1, 20.1, 1, 2);
+		c1.calculate(50.3, 12.1, 0.5, 11.1);
+		c1.calculate(3.4, 1.2, 5);
+		c1.calculate(10, 2.2); } }
+
+***********************************************************************************************************************************************************************			
+Q. POLYMORPHISM :
+
+	a) One entity which shows different behaviour at different places is called as POLYMORPHISM.
+	b) Method overrinding is a type of polymorphism.
+	c) (Method overrinding)--> checks for method declare and binds the method definition execute
+	   the code basically at run time and it is called run-time polymorphism.
+	d) Method overriding is an example of run-time polymorphism(late binding).
+	e) Compile-time polymorphism (constuctor/method overloading)-->compiler will binds the method(which are diff) then and their itself at the compile time.
+	f) Method overloading is an example of Compile-time polymorphism(early binding).
+
+***********************************************************************************************************************************************************************
+Q. ABSTRACTION :
+
+	a) Hiding the information details of a class and exposing services/methods is called ABSTRACTION.
+	b) Whenever a method is invoked in java it can be called as Abstraction.
+	c) How to achieve abstraction :
+		i)  abstract class
+		ii) Interface
+**********************************************************************************************************************************************************************
+Q. ABSTRACT CLASS :
+
+	a) Any class that has being declared with the keyword abstract that is called as abstract class.
+	b) Any method that has been declared with the abstract keyword is called abstract method.
+	c) abstract method does not have body.
+	d) abstract method only have declaration.
+	e) abstract can have both abstract method as well as concrete method.
+	f) concrete method which have both declaration and body.
+	g) Any class having an abstract method should be declared has abstract class.(mandatory)
+	h) Any class which is declared as abstract need not have abstract method or it can have abstract ,not mandatory.
+	i) If a class has been declared has abstract then the class should be extended by subclass(If there is no implementation then there is no use of it).
+	j) We can't create objects for abstract class.
+	k) But an abstract class can have constructor.
+	l) Example : abstract class-->parent class subclass--->childclass,super()-->compiler,we can have constructor in abstract class.
+	m) We should override(in subclass) each and every method which is declared as abstract in superclass 
+	n) In child class if we declare child class as abstract then there is no mandatory to override the methods present in superclass.
+	o) If the abstract class(superclass) extended by the concreate class(subclass) then it should override each and evey method present in the superclass.
+	p) The methods are by default public.
+
+**********************************************************************************************************************************************************************	
+Q. INTERFACE :
+
+	a) Interface is by default abstract.
+	b) We achieve it by using implements keyword.
+	c) concrete method written in interface, should be either declared as static or default.
+	d) we can implement number of interface at the same time, but class can't extand more than one class at the same time.
+	e) Data member can be public/package/static/final
+	f) After java 8.0 we can write concrete method only declaring that with static/default.
+	g) we can't create constructor inside the interface.
+
+**********************************************************************************************************************************************************************
+Q. Difference between abstract class and interface
+
+	ABSTRACT CLASS :
+
+		a) The method is declared with the abstract keyword.
+		b) class is declared with abstract keyword.
+		c) object can't be created for abstract class.
+		d) we can extend abstract class by extends keyword.
+		e) By default it is public.
+		
+	INTERFACE :
+
+		a) Interface are by default abstract.
+		b) methods are also by default abstract.
+		c) A class can only implements an interface.
+		d) object can't be created for an interface.
+		e) Data member can be public/package/static/final.
+		
+***********************************************************************************************************************************************************************
+Q. TYPES OF INTERFACE :
+
+	a) Functional interface :
+
+		i)   Has only one abstract method.
+		ii)  we add @FunctionalInterface annotation for abstract method in interface.
+		iii) Example : 
+				package com.dev.interfaces;
+				@FunctionalInterface
+				public interface InterfaceExample {
+				void display();
+				static void show() {
+				System.out.println("show() method from interface 1"); }}
+
+	b) Typical interface :
+
+		i)  Has N no. of abstract method.
+		ii) Example : 
+				package com.dev.interfaces;
+				public interface InterfaceExample2 {
+				public void display1();
+				static void show1() {
+				System.out.println("show()1 method of interface2");
+				}
+				default void show2() {
+				System.out.println("show()2 method of interface2");
+				}}
+ 
+
+	c) Marker interface :
+		
+		i)   An interface which has does not have any methods are called Marker interface
+		ii)  Example 1 :
+				public interface Cloneable { }
+		iii) Example 2 : public interface Serializable { }
+		iv)  Example 3 : public interface Remote { }
+		v)   Cloneable is a predefined class in object class
+
+
+	EXAMPLE :
+
+			package com.dev.interfaces;
+			import java.io.Serializable;
+			import java.rmi.Remote;
+			public interface InterfaceExample2 extends Cloneable,Serializable,Remote{
+			public void display1();
+			static void show1() {
+			System.out.println("show()1 method of interface2");
+			}
+			default void show2() {
+			System.out.println("show()2 method of interface2"); } }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE :
+
+	i)   For java.lang package we no need to import,it is imported by default.
+	ii)  But any classes, interface or methods present in different packages i.e., rmi(remote), io(serializable) we have ti add import statement.
+	iii) If we have satic members in a class we can write static import.	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+***********************************************************************************************************************************************************************	
+Q. ENCAPSULATION :
+
+	a) Hiding the data members.
+	b) Declaring the data members as private.
+	c) public methods : 
+		i) getters()  : To access the members.(read only)
+		ii) setters() : set some value to the data members(manipulate data)--(write only)
+	d) Encapsulation is a machanism in which we rap up the data members and function members into a single object is known as ENCAPSULATION.
+	e) Data Hiding -----> Either it can be readonly or write only.
+
+	EXAMPLE :
+
+		package com.dev.encapsulation;
+
+			public class Student {
+			private int regNo;
+			private String name;
+			private String email;
+			private String password;
+
+			public int getRegNo() {
+			return regNo;
+			}
+
+			public void setRegNo(int regNo) {
+			this.regNo = regNo;
+			}
+
+			public String getName() {
+			return name;
+			}
+
+			public void setName(String name) {
+			this.name = name;
+			}
+
+			public String getEmail() {
+			return email;
+			}
+
+			public void setEmail(String email) {
+			this.email = email;
+			}
+
+			public void setPassword(String password) {
+			this.password = password; }}
+
+
+		package com.dev.encapsulation;
+
+			public class StudentData {
+			public static void main(String[] args) {
+		
+			Student s1=new Student();
+			s1.setRegNo(10001);
+			s1.setName("Jeevitha");
+			s1.setEmail("jvrao@gmail.com");
+			s1.setPassword("123@gv");
+		
+			int regNo=s1.getRegNo();
+			System.out.println("RegNo:  "+regNo);
+		
+			String name=s1.getName();
+			System.out.println("Name :  "+name);
+		
+			System.out.println("Email:  "+s1.getEmail()); }}
+
+***********************************************************************************************************************************************************************Q. PACKAGES :
+
+	a) organize the code in proper manner.
+	b) java API(application programming interface)--->collection of different packages.
+	c) some of the packages are :
+					i)  java.lang
+					ii) java.util
+
+	d) It will enable us to re-use the code again and again.
+	e) separating different classes in different packages.
+	f) To access the classes present in different pakages we either go for :
+				1) fully qualifided classname ---> ex: com.dev.encapsulation.Dog
+				2) import packages.
+
+***********************************************************************************************************************************************************************
+Q. FINAL KEYWORD :
+
+	a) final keyword is used with :
+
+					1) variables
+					2) methods
+					3) classes
+
+	b) If a variable is declared and initialized the value with final keyword, the value of the variable can't be change.
+	c) variable declare with the Block letter is used to represent it as final.
+	d) final variables can't be re-initialized.
+	e) final methods can't be overridden.
+	f)  final class can't be superclass ,but subclass can be final.
+
+***********************************************************************************************************************************************************************	
+Q. OBJECT CLASS :
+
+	a) In java each and every class directly or indirectly inherits the properties of object class.
+	b) Object class is the supermost class in java.
+	c) Each and every class either a pre-defined class or a user defined class is a child class of object.
+	d) Class is the blue print of an object.
+	e) object class has 12 methods(one is native class).
+
+**********************************************************************************************************************************************************************
+Q. METHODS OF OBJECT CLASS:
+
+		1) getclass();		6) wait(long);			11)hashcode();
+		2) clone();		7) wait(long,int);
+		3) equals();		8) notify();
+		4) to String();		9) notify all();
+		5) wait();		10) finalize();
+
+**********************************************************************************************************************************************************************
+Q. STRINGS:
+
+	a) Strings are reference types,not value types,such as int or boolean.As a result, a string variable holds a reference to an object created
+	   from the string class, not the value of the string itself.
+	b) Even though the strings are primitive types,the java compiler has some features designed to let you work with strings almost as though
+	   they were primitve types.
+	c) You can combine,or concatenate,strings by using '+' operator.String is the only class where operator ovreloading is supported in java.
+	d) String is immutable.An immutable object is an object that,once created,can never be changed.The string class is the most common example 
+	   of an object.
+	e) The string pool contains two parts:(i) Constant pool (ii) Non-Constant pool, within the constant pool duplicates are not allowed.
+	   whereas within non-constant pool duplicates are allowed.
+
+***********************************************************************************************************************************************************************
+Q. STRING BUILDER AND STRING BUFFER CLASSES:
+	
+	a) The string is a powerful class,but it is not efficient.Because string objects are immutable,any method of the string class that modifies
+	   the string in any way must create anew string object.
+	b) To overcome this problem,java offers two alternatives to the string class:String Buffer and String Builder classes.
+	c) The String buffer and string builder classes are mirror images.Both have the same methods and perform the same string manipulations.
+	d) The only difference in string buffer and string builder is that string buffer is safe whereas string builder is not safe.
+	e) String builder sb1 =new String builder("hii");
+	   String buffer sb2 = new String buffer("hlo");
+
+CONSTRUCTOR:
+		1) ex:public StringBuffer(){
+				super(16);
+		}
+			a) Constructs a string buffer with no character init.and an initialixe capacity of 16 characters.
+
+		2) ex:public StringBuffer(int capacity){
+				super(capacity);
+		}
+			b) Constructs astring buffer with no characters in it and the specified intial capacity.
+
+		3) ex:String buffer sb = new String Buffer(-1);
+			c) @param capacity the initial capacity.
+			   @Ecxeption Negative Array size exception.
+		4) ex: public StringBuffer(String str){
+				super(str.length() +16);
+				append(str);
+			d) Constructs a string buffer initialized to the contents of the specified string.the initial capacity of the string  buffer
+			   is {@code 26} plus the length of the string argument.
+				@para, is the initial contents of the buffer.
+		5) ex: public stringBuffer (charSequence seq){
+				this(seq.length()+16);
+				append(seq);
+			}
+			e) Constructs a string buffer that contains the same characters asthe specified{@code charSequence}.the initial
+			   capacity of the string buffer as{@code 16} plus the length of the{@code charSequence}argument.
+
+***********************************************************************************************************************************************************************
+Q. DIIFERENCES BETWEEN STRING,STRING BUFFER,STRING BUILDER:
+	
+		STRING 					STRING BUFFER 				STRING BUILDER
+
+	1.Immutable.				     1.Mutable.				      1.Mutable.
+	2.Not thread safe.			     2.Thread safe.			      2.Not thread safe.
+	3.Not synchronized.			     3.synchronized.			      3.Not synchronized.
+	4.Fast.					     4.Slow.				      4.Fast(Efficient)
+
+***********************************************************************************************************************************************************************
+Q. EXCEPTION HANDLING:
+
+	a)Exception:Execption is an error event that can happen during the execution of program and disrupts its normal flow of execution.
+	b)Exception follows hybrid inhertance.
+
+	Execption Handling: 
+
+		1) Exceptions in java can arise from different kinds of situations such as wrong data entered by user,hardware failure,network
+		   connection failure,database server down etc..,
+		2) Whenever an error occurs while executing a statement,creates an exception object and then the normal flow of program halts.
+		3) The exception object contains a lot of debugging information such as method hierarchy,line number where exception is occured,
+		   type of exception etc..,
+		4) When the exception occurs in a method,the process of creating the exception object and handling it over to runtime environment
+		   is called "throwing the exception".
+		5) If appropriate exception handler is found ,exception object is passed to the handler to process it.the handler is known as 
+		   "Catching the exception".
+
+	NOTE:
+		a) Java Exception handling is aframework that is used to handle runtime errors only.compile time error are not handled by exception handling 
+     	    	in java.
+
+		b) try-catch block inside finally block posible.
+
+***********************************************************************************************************************************************************************
+Q. What is the difference between exception and errors?
+		
+		ERRORS			      			                             EXCEPTION
+
+	1.Recovering from error is not possible.				1.We can recover from exceptions by using exception handler.
+	2.All errors in java are unchecked type.				2.Exceptions include both checked and unchecked type.
+	3.Errors occur at runtime and not know to compiler.			3.All exceptions occur at runtime but checked exception are
+										  known to compiler while unchecked are not.
+	4.Errors are mostly occured by the environment in which			4.program itself is responsible for causing exceptions.
+	  program is running.
+  	5.Defined in java.lang.package.						5.Defined in java.lang.exceptionpackage.
+	6.ex:java.lang.stackoverflow error					6.ex: ArrayindexoutofBoundException
+	     java.lang.outofmemory error					      NullpointerException e.t.c..,
+
+***********************************************************************************************************************************************************************
+Q. JAVA EXECEPTION KEYWORDS :
+
+	1) throw : user defined exception(It will handled the exception).
+	2) throws : will not handle the exception,it tells where may or maynot throws an exception
+	3) try-catch block
+	4) finally
+***********************************************************************************************************************************************************************
+Q. JAVA EXCEPTION HIERARCHY :
+
+	a) Java exceptions are heirarchical and inheritance is used to catogories diff types of exceptions .
+	b) Throwable is parent class of java  exceptions heirarchy and it has two child objects(error and  exceptions).
+	c) Exceptions are divided into checked and unchecked  exceptions.
+	d) un-handled exception(FileNotFoundException)-------->checked exception
+
+***********************************************************************************************************************************************************************
+Q.ERRORS :
+
+	a) Errors ae exceptional scenarios that are out of scope of application and its not possible to anticipate and remove.
+	
+***********************************************************************************************************************************************************************
+Q. Note :
+
+	a) whenever we have checked exceptions(throws warning at compile)-----> try and catch block
+	b) whenever we have unchecked exceptions(don,t have any warnings by compiler,it will throws after compilation)-----> try and finally block
+	c) unchecked Exception occure at run time.
+
+	d) 	/**
+     		* Returns the detail message string of this throwable.
+    		*
+     		* @return  the detail message string of this {@code Throwable} instance
+     		*          (which may be {@code null}).
+     		*/
+
+   			 public String getMessage() {
+        			return detailMessage;
+    			}
+
+	e)	 /**
+     		 * Creates a localized description of this throwable.
+     		 * Subclasses may override this method in order to produce a
+     		 * locale-specific message.  For subclasses that do not override this
+     		 * method, the default implementation returns the same result as
+     		 * {@code getMessage()}.
+     		 *
+     		 * @return  The localized description of this throwable.
+     		 * @since   1.1
+     		 */
+
+    			public String getLocalizedMessage() {
+        		return getMessage();
+   				 }
+
+	f)	/*
+		 * 1. If we have multiple catch block we can't write
+		 * 	  Exception class as 1st parameter
+		 * 2. We can have that Exception class in last catch block.
+		 */
+		
+
+***********************************************************************************************************************************************************************
+Q. Note:
+
+	1) Normal
+
+	try{}
+	catch(){}
+
+	2) triable resources(advance java-JDBC(connection b/w java pgm and database)in order to close we use close() otherthan close() we go for triable resources).
+
+	try(){}
+	catch(){}
+
+***********************************************************************************************************************************************************************
+Q. COLLECTIONS :
+
+	a) Collections are like containers that group multiple items in a single unit.
+	b) Collection are used in every programming language and when java arrived, it also came with few collection classes; Vector,Stack,Hashtable,Array.
+	c) Java 1.2 provide Collection FrameWork ----> Manipulate collections in java in a standard way.
+	d) Java collection Frameworks consist of following parts :
+		i)Interface
+			a) Java collection franme work interfaces provides the abstract data tyoe to represent collection.
+			java.util.Collections
+			
+		b) Methods are :
+			1) size()
+			2) iterator()
+			3) add()
+			4) remove()
+			5) clear()
+
+			c) Other interface are :
+			java.util.List/Set/Queue?Map
+
+		ii) Implementation Classes.
+	
+			a) ArrayList, LinkedList,HashMap,TreeMap,HashSet,TreeSet
+
+Note: We can also create the custom collection class.
+
+***********************************************************************************************************************************************************************
+Q. Benifits of java Collextion FrameWork
+
+	a) Reduced Development effort.
+	b) Increased Quality
+	c) Re-usabilty and interoperability
+
+**********************************************************************************************************************************************************************
+Q. Java Collections Interfaces
+
+	a) All the core collection interfaces are generic.(syntax : <E> )
+	b) Whenever we use collection we come across "ClassCastException " (So we use generic to overcome that Exception).
+	c) Generic helps in reducing run-time errors by type-checking the object at compile time.
+	d) If an unsupported operation is invoked, a collection implementation throws an UnsupportedOperationException.
+
+**********************************************************************************************************************************************************************
+Q. Collection interface :
+
+	a) Root of the collection herirarchy.
+	b) A collection represents  group of objects known as Elements.
+	c) Methods : size(),isEmpty(),contains(),add(),remove(),iterator().
+	d) For bulk operation : containsAll(),addAll(),removeAll(),retainAll(),clear().
+	e) toArray() are provided
+
+***********************************************************************************************************************************************************************
+Q. Set interface :
+
+	a) A collection that contains no duplicate elements.
+	b) sets contain no pair of elements {@code e1} and {@code e2} such that {@code e1.equals(e2)}, and at most one null element.
+	c) As implied by its name, this interface models the mathematical <i>set</i> abstraction.
+	d) Implementation Classes : HashSet,TreeSet,LinkedHashSet.
+
+***********************************************************************************************************************************************************************
+Q. List Interface :
+
+	a)  An ordered collection (also known as a <i>sequence</i>).
+	b) The user of this interface has precise control over where in the list each element is inserted.  
+	   The user can access elements by their integer inde(position in the list), and search for elements in the list.<p>	
+	c) Unlike sets, lists typically allow duplicate elements.  More formally, lists typically allow pairs of elements {@code e1} and {@code e2}
+           such that {@code e1.equals(e2)}, and they typically allow multiple null elements if they allow null elements at all.
+	d) Implementation Classes : ArrayList and LinkedList
+	e) methods---> add an element at specific index, remove/replace elements based on the index and to get a sub-list using interface.
+
+***********************************************************************************************************************************************************************
+Q. Queue Interface :
+
+    1)	A collection designed for holding elements prior to processing. Besides basic {@link Collection} operations, queues provideadditional insertion, extraction, 		and inspection operations. Each of these methods exists in two forms: one throws an exception if the operation fails, the other returns a special value (either
+ 	{@code null} or {@code false}, depending on the operation)(FIFO).
+ 
+    2)	The latter form of the insert operation is designed specifically for use with capacity-restricted {@code Queue} implementations; in most implementations, 		insert operations cannot fail.
+
+    3)	Methods : 
+
+	a) boolean offer(E e);--> Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions.
+			     -->throws ClassCastException,NullPointerException,IllegalArgumentException.
+			     -->return {@code true} if the element was added to this queue, else false.
+
+	b)  E element();----> Retrieves, but does not remove, the head of this queue.  This method differs from {@link #peek peek} only in that it throws an exception
+     			      if this queue is empty.
+     			----> return the head of this queue
+     			----> throws NoSuchElementException if this queue is empty.
+
+	c)  E poll(); -----> Retrieves and removes the head of this queue, or returns {@code null} if this queue is empty.
+     		      -----> return the head of this queue, or {@code null} if this queue is empty.
+
+    4) Implementation : Priority queue.
+
+***********************************************************************************************************************************************************************
+Q. Map Interface :
+
+	a) An object that maps keys to values. A map cannot contain duplicate keys;each key can map to at most one value. 
+	b) This interface takes the place of the Dictionary class, which was a totally abstract class rather than an interface.
+	c) Implementation : HashMap,TreeMap,LinkedHashMap 
+	d) Methods : put(),get(),containsKey(),containsValue(),size(),isEmpty().
+
+***********************************************************************************************************************************************************************
+Q. Java Collection Classes
+
+	a) HashMap
+		--->This class implements the {@code Set} interface, backed by a hash table (actually a {@code HashMap} instance).
+		---> It makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time.  		     	     This class permits the {@code null} element.
+		---> Constructs a new, empty set; the backing {@code HashMap} instance has default initial capacity (16) and load factor (0.75).
+
+    			public HashSet() {
+        		map = new HashMap<>(); }
+
+		--->   Constructs a new set containing the elements in the specifiedcollection.  The {@code HashMap} is created with default load factor
+     			(0.75) and an initial capacity sufficient to contain the elements in the specified collection. @param c the collection
+			 whose elements are to be placed into this set @throws NullPointerException if the specified collection is null
+
+   				 public HashSet(Collection<? extends E> c) {
+       				 map = new HashMap<>(Math.max((int) (c.size()/.75f) + 1, 16));
+       				 addAll(c); }
+		----> Constructs a new, empty set; the backing {@code HashMap} instance has the specified initial capacity and the specified load factor.
+    		 @param initialCapacity   the initial capacity of the hash map
+		 @param      loadFactor        the load factor of the hash map
+		 @throws     IllegalArgumentException if the initial capacity is less than zero, or if the load factor is nonpositive
+    
+  			  public HashSet(int initialCapacity, float loadFactor) {
+        			map = new HashMap<>(initialCapacity, loadFactor); }
+
+		----->  Constructs a new, empty linked hash set.  (This package private constructor is only used by LinkedHashSet.) The backing HashMap instance is a 			LinkedHashMap with the specified initial capacity and the specified load factor. 
+		 @param      initialCapacity   the initial capacity of the hash map
+     		 @param      loadFactor  the load factor of the hash map
+     		 @param      dummy    ignored (distinguishes this constructor from other int, float constructor.)
+		@throws     IllegalArgumentException if the initial capacity is less
+                than zero, or if the load factor is nonpositive
+    
+    				HashSet(int initialCapacity, float loadFactor, boolean dummy) {
+       				 map = new LinkedHashMap<>(initialCapacity, loadFactor); }
+
+*********************************************************************************************************************************************************************
+Q. HashMap Class :
+
+	 Hash table based implementation of the {@code Map} interface.  This
+ * implementation provides all of the optional map operations, and permits
+ * {@code null} values and the {@code null} key.  (The {@code HashMap}
+ * class is roughly equivalent to {@code Hashtable}, except that it is
+ * unsynchronized and permits nulls.)  This class makes no guarantees as to
+ * the order of the map; in particular, it does not guarantee that the order
+ * will remain constant over time.
+
+***********************************************************************************************************************************************************************
+Q. TreeSet :
+
+	/**
+ * A {@link NavigableSet} implementation based on a {@link TreeMap}.
+ * The elements are ordered using their {@linkplain Comparable natural
+ * ordering}, or by a {@link Comparator} provided at set creation
+ * time, depending on which constructor is used.
+ */
+-------------------------------------------------------------
+
+ /**
+     * Constructs a set backed by the specified navigable map.
+     */
+    TreeSet(NavigableMap<E,Object> m) {
+        this.m = m;
+    }
+
+----->
+
+  /**
+     * Constructs a new, empty tree set, sorted according to the specified
+     * comparator.  All elements inserted into the set must be <i>mutually
+     * comparable</i> by the specified comparator: {@code comparator.compare(e1,
+     * e2)} must not throw a {@code ClassCastException} for any elements
+     * {@code e1} and {@code e2} in the set.  If the user attempts to add
+     * an element to the set that violates this constraint, the
+     * {@code add} call will throw a {@code ClassCastException}.
+     *
+     * @param comparator the comparator that will be used to order this set.
+     *        If {@code null}, the {@linkplain Comparable natural
+     *        ordering} of the elements will be used.
+     */
+
+
+    public TreeSet(Comparator<? super E> comparator) {
+        this(new TreeMap<>(comparator));
+    }
+
+**********************************************************************************************************************************************************************
+Q. ArrayList :
+
+/**
+ * Resizable-array implementation of the {@code List} interface.  Implements
+ * all optional list operations, and permits all elements, including
+ * {@code null}.  In addition to implementing the {@code List} interface,
+ * this class provides methods to manipulate the size of the array that is
+ * used internally to store the list.  (This class is roughly equivalent to
+ * {@code Vector}, except that it is unsynchronized.)
+ */
+
+--> default size of an array list is 10
+
+----------------------------------------------------------------->
+
+ /**
+     * Constructs a list containing the elements of the specified
+     * collection, in the order they are returned by the collection's
+     * iterator.
+     *
+     * @param c the collection whose elements are to be placed into this list
+     * @throws NullPointerException if the specified collection is null
+     */
+
+    public ArrayList(Collection<? extends E> c) {
+        elementData = c.toArray();
+        if ((size = elementData.length) != 0) {
+            // defend against c.toArray (incorrectly) not returning Object[]
+            // (see e.g. https://bugs.openjdk.java.net/browse/JDK-6260652)
+            if (elementData.getClass() != Object[].class)
+                elementData = Arrays.copyOf(elementData, size, Object[].class);
+        } else {
+            // replace with empty array.
+            this.elementData = EMPTY_ELEMENTDATA;
+        }
+    }
+	
+------------------------------------------------------------------>
+
+ /**
+     * Trims the capacity of this {@code ArrayList} instance to be the
+     * list's current size.  An application can use this operation to minimize
+     * the storage of an {@code ArrayList} instance.
+     */
+
+    public void trimToSize() {
+        modCount++;
+        if (size < elementData.length) {
+            elementData = (size == 0)
+              ? EMPTY_ELEMENTDATA
+              : Arrays.copyOf(elementData, size);
+        }
+    }	
+
+
+------------------------------------------------------------------------>
+  /**
+     * Increases the capacity of this {@code ArrayList} instance, if
+     * necessary, to ensure that it can hold at least the number of elements
+     * specified by the minimum capacity argument.
+     *
+     * @param minCapacity the desired minimum capacity
+     */
+
+    public void ensureCapacity(int minCapacity) {
+        if (minCapacity > elementData.length
+            && !(elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+                 && minCapacity <= DEFAULT_CAPACITY)) {
+            modCount++;
+            grow(minCapacity);
+        }
+    }
+
+***********************************************************************************************************************************************************************
+Note : Collection interface is also a concrete class.
+
+************************************************************************************************************************************************************************
+
+
+
+
+
+    
+
+
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+					
+
+					
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
