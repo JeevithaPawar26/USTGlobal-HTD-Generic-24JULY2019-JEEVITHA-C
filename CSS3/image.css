@@ -1,0 +1,35 @@
+/* to make image inline */
+.img-div{
+    float:left;
+    /* if we need a border for an image then */
+    border: 3px solid black;
+    /* to make the border curved */
+    border-radius: 25px;
+    /* to show the image properly bcz it is maped over the other */
+    overflow: hidden;
+    /* to make the text in the center */
+    text-align: center;
+    /* to make a space b/w the no. of images */
+    margin-left: 10px;
+    /* to make the backgroung image color */
+    background-color: greenyellow;
+}
+/* to inmcrease the size of image */
+img{
+    width:300px;
+    height:300px;
+    /* zoom the image for a particular period of time (slowly)*/
+    transition:  all 3s;
+}
+img:hover{
+    /* to zoom the image */
+    /* transform.scale(width,height) */
+    transform: scale(1.2,1.2);
+}
+/* to avoid the description the the image */
+.desc{
+    /* for spacing of text */
+    margin-top: 22px;
+    /* to change the font */
+    font-family: cursive;
+}

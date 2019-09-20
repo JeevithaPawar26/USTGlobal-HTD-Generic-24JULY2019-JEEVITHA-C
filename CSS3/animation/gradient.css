@@ -1,0 +1,10 @@
+#grad{
+    height: 300px;
+    /* by default the color is applied from top to bottom to make changes give to right */
+    background: linear-gradient(to right, orange , yellow ,red ,purple);
+}
+#grad1{
+    height: 300px;
+    background: repeating-radial-gradient(blue,yellow 10%,green 15%);
+
+}

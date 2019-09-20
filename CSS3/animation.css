@@ -1,0 +1,51 @@
+ul{
+/* to make it at the center */
+margin-top: 400px;
+}
+li{
+    /* to display the dot inline */
+    display: inline-block;
+    background-color:black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /* to giv the space in b/w */
+    margin-left: 300px;
+    /* for animation and type of action to be carried */
+    animation: glow 2s infinite linear;
+}
+/* for animation we gonna write rule like @keyframes */
+@keyframes glow
+{
+    0%,25%,50%,75%,100%{
+        transform: scale(0.5,0.5);
+    }
+    50%{
+        transform:scale(3,3);
+    }
+}
+/* to li list we have to giv a specific color and shadow so....... */
+li:nth-child(1){
+    background-color: red;
+    animation-delay: 0.1s;
+    box-shadow: 0 0 15px yellow;
+}
+
+li:nth-child(2){
+    background-color:greenyellow;
+    animation-delay: 0.3s;
+    box-shadow: 0 0 15px green;
+}
+
+li:nth-child(3){
+    background-color:blue;
+    animation-delay: 0.3s;
+    box-shadow: 0 0 15px rgba(67, 75, 173, 0.726);
+}
+li:nth-child(4){
+    background-color: rgb(255, 0, 98);
+    animation-delay: 0.1s;
+    box-shadow: 0 0 15px yellow;
+}
+
+

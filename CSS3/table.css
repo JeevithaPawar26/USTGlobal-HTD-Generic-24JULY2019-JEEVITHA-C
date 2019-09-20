@@ -1,0 +1,35 @@
+table, th, td
+{
+    /* border:1px solid black; */
+    /* to remove double border */
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 25px;
+}
+table
+{
+    width: 90%;
+}
+th
+{
+    background-color: rgba(84, 30, 155, 0.479);
+    color:white;
+}
+tr:nth-child(even)
+{
+    background-color: greenyellow;
+}
+tr:nth-child(odd)
+{
+    background-color:gold;
+}
+td:hover
+{
+    background-color:blueviolet;
+    color:white;
+}
+

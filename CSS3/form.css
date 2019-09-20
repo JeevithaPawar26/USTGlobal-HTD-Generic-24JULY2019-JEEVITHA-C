@@ -1,0 +1,59 @@
+
+body
+{
+    margin-top: 200px;
+    margin-left: 500px;
+    /* margin: 100px 00 200px;*/
+    width: 300px;
+    /* to give the back ground */
+    background-image: url(/images/flower-4331238__340.jpg);
+    /* the above line of code create many copy of images so to avoid that we do...... */
+    background-size: cover;
+}
+form
+{
+    background-image: url(/images/gif1.webp);
+    background-size: cover;
+    color: white;
+border:1px solid blue;
+text-align: center;
+/* border in curve shape */
+border-radius: 25px;
+font-family: cursive;
+/* shading effect */
+font-size: 20px;
+/* box-shadow:5px 5px blue; */
+box-shadow:0 0 100px blueviolet;
+}
+input[type="text"], input[type="password"]
+{
+    height: 25px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin:7px;
+    text-align: center;
+}
+/* to remove the focus in the border chk  bellow */
+
+input[type="text"]:focus, input[type="password"]:focus
+{
+    outline: none;
+    background-color: rgba(0, 102, 255, 0.712);
+}
+button
+{  
+    color: bisque;
+    border: none;
+    background-color: rgba(255, 0, 191, 0.26);
+    padding: 5px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+/* to get the hand symbol pointer */
+button:hover
+{
+  background-color: rgb(61, 206, 17);
+  cursor: pointer;
+}
