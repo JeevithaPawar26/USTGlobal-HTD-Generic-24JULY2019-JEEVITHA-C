@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="col-md-3 float-left " id="slide" >
+            <div class='card card-body'  *ngFor="let c1 of cars">
+                    <h2>{{message}}</h2>
+                    <img src="{{c1.img}}" alt="" class='card-img-top' (click)="sendCar(c1)" >
+                    <h1 class="card-title">{{c1.brand}}</h1>
+                   
+             </div>
+    </div>
+
+<app-cars-deatails [carInfo]="carData"></app-cars-deatails>
+<app-cars-deatails  (childEvent)="message=$event"></app-cars-deatails>
+</div>
