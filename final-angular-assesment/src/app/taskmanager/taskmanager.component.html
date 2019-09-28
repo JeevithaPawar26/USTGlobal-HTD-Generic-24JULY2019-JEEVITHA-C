@@ -1,0 +1,24 @@
+<div class='container'>
+   <!-- <div class='card card-body col-md-6 offset-md-3 mt-3'>
+<input type="text" class='form-control' [(ngModel)]='task'><br>
+<button type='submit' class='btn btn-outline-success' (click)='submitT(task)'></button>
+   </div> -->
+    <div class="card card-body col-md-6 mt-3 offset-3">
+        <input class='form-group' type="search" name='title' >
+        <button class=' col-md-3 btn btn-outline-success float-right' (click)='submit(value)'>Submit</button>
+    </div>
+    <div>
+        <ol>
+            <li>{{title.value}}</li>
+        </ol>
+    </div>
+
+    <div class="card" *ngFor='let d1 of userData'>
+        <ol>
+            <li>{{d1.name}}</li>
+            <li>{{d1.id}}</li>
+        </ol>
+
+
+    </div>
+</div>

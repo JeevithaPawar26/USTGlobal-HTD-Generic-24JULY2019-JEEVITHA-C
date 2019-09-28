@@ -1,0 +1,36 @@
+<div class='container'>
+    <div class='col-md-3 mt-2'>
+    <!-- <div class="col-md-3 mt-3">
+        <div class='card card-body' *ngFor="let json of jsonNews">
+            <h1>{{json.name}}</h1>
+            <h1>{{json.username}}</h1>
+            <h1>{{json.email}}</h1>
+        </div>
+
+    </div> -->
+    <table class='table table-bordered table-hover'>
+        <thead class='thead-dark'>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>UserName</th>
+                <th>Email</th>
+                <th>WebSite</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let json of jsonNews; index as i'>
+                <!-- <tr colspan='3'></tr> -->
+                <td class='bg-danger'><h1>{{i+1}}</h1></td>
+                <td class='bg-warning text-center'><h3>{{json.name}}</h3></td>
+                <td class='bg-success'><h3>{{json.username}}</h3></td>
+                <td class='bg-warning'><h3>{{json.email}}</h3></td>
+                <td  class='bg-success'><h3>{{json.website}}</h3></td>
+                <td class='bg-warning'><h3>{{json.address.street}},{{json.address.suite}},{{json.address.city}},{{json.address.zipcode}}</h3></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+</div>
