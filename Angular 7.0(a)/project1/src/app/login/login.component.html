@@ -1,0 +1,44 @@
+<p>login works!</p>
+<div class="card col-md-6  mt-4 offset-3 ">
+    <div class="card-body">
+        <h4 class='text-center'>Please Login</h4>
+<form action="" #loginForm='ngForm' (ngSubmit)=printForm(loginForm)>
+ <div class="form-group">
+    <label for="username">UserName</label>   
+    <input type="email"  name='username' id="" required placeholder="Enter UserName" class="form-control" #username='ngModel' ngModel minlength='5' email>
+     <div *ngIf='username.touched && username.invalid'>
+     <div class="alert alert-danger" *ngIf='username.errors.email'>This input field takes only Email</div>
+</div>
+
+<div class="alert alert-danger" *ngIf='username.errors.minlength'>Minimun length of this input field is 5</div>
+ </div>
+    <div class="form-group"> 
+ <label for="">Password</label>               
+    <input name='psd' type="password" class="form-control" #password='ngModel' ngModel  id=""  placeholder="Enter password" minlength="4" password>
+    <div *ngIf='password.invalid && password.touched'>
+    <div class="alert alert-danger" *ngIf='password.errors.minlength'>Enter the correct password</div>
+    </div>  
+</div>
+  <button type="submit" class= " btn btn-outline-primary offset-10" [disabled]='loginForm.invalid' >Log In</button>
+</form>
+</div>
+
+<div class="container"></div>
+<table class="table table-hover table-bordered table-dark">
+    <thead>
+        <tr>
+            <td>Index</td>
+            <td>UserName</td>
+            <td>Password</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let user of users;index as i'>
+            <td>{{i+1}}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.password}}</td>
+
+        </tr>
+    </tbody>
+
+</table>

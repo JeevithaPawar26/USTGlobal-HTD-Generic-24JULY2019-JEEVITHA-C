@@ -1,0 +1,19 @@
+<p>observables works!</p>
+<table class="table table-border table-hover table-bordered">
+    <thead class='bg-dark'>
+        <tr>
+           <th>Index</th>
+           <th>Name</th>
+           <th>Company</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let user of userService.users; index as i'>
+            <td>{{i+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.company}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- <button class='btn-btn success' (click)=userService.users>click here to call the function</button> -->
